@@ -38,3 +38,5 @@
 *.xml
 
 *.xmi
+
+RemoteSystemsTempFiles/\.project
