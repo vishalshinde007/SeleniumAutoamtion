@@ -6,6 +6,20 @@ public class Car
 	String colour;
 	static int wheels=4;
 	
+	//Default Constructor
+	public Car(String name, String colour)
+	{
+		
+		this.name=name;
+		this.colour=colour;
+		
+	}
+	
+	//Construcor Overaloadding: When we have more than one constructor in one class
+	public Car() {
+		// TODO Auto-generated constructor stub
+	}
+
 	//non static functions (we have to create object of class)
 	public void driving()
 	{
