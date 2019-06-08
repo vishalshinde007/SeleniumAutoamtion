@@ -1,5 +1,5 @@
 package polymorphysum;
-//functiona overloading
+//function overloading
 public class Functions {
 	
 	
