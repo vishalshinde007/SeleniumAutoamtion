@@ -40,3 +40,7 @@
 *.xmi
 
 RemoteSystemsTempFiles/\.project
+
+\.metadata/\.lock
+
+\.metadata/\.log
