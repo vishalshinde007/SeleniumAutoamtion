@@ -6,7 +6,7 @@ public class Car
 	String colour;
 	static int wheels=4;
 	
-	//Default Constructor
+	
 	public Car(String name, String colour)
 	{
 		
@@ -15,6 +15,7 @@ public class Car
 		
 	}
 	
+	//Default Constructor
 	//Construcor Overaloadding: When we have more than one constructor in one class
 	public Car() {
 		// TODO Auto-generated constructor stub

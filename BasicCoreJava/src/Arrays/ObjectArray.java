@@ -4,6 +4,8 @@ public class ObjectArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		//Object is superclass of all classes so we can store different types
 
 		Object[] arr = new Object[4];
 		
