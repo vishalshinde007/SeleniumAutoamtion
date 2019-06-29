@@ -10,34 +10,51 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
-public class SetValueInExcel {
+public class WriteInExcel {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
-		String path = System.getProperty("user.dir")+"\\src\\excelFileHandling\\TestData.xls";
+		String[][] values= {
+				{"name","surname","address"},
+				{"Vishal","Shinde","Pune"},
+				
+				{"Satya","Shinde","Pune"}
+		};
+		
+String path = System.getProperty("user.dir")+"\\src\\excelFileHandling\\TestData.xls";
 		
 		FileInputStream file = new FileInputStream(path);
 		HSSFWorkbook wb = new HSSFWorkbook(file);
 		
-		HSSFSheet sheet =wb.getSheet("Sheet1");
+		HSSFSheet sheet =wb.getSheet("Sheet2");
 		
-		HSSFRow row= sheet.getRow(0);
-		
-		if(row==null)
+		for(int r=0;r<values.length;r++)
 		{
-			row=sheet.createRow(6);
-		}
-		
+			HSSFRow row= sheet.getRow(r);
 			
-		HSSFCell cell = row.getCell(0);
-		
-		if (cell==null)
-		{
-			cell=row.createCell(1);
+			if(row==null)
+			
+				row=sheet.createRow(r);
+			
+			
+			for (int c=0;c<values[0].length;c++)
+			{
+				HSSFCell cell = row.getCell(c);
+				if (cell==null)
+				
+					cell=row.createCell(c);
+					cell.setCellValue(values[r][c]);
+				
+			}
+			
 		}
 		
-		cell.setCellValue("Vishal");
+		
+				
+		
+		
+		//cell.setCellValue("Vishal");
 		
 		FileOutputStream fileout = new FileOutputStream(path);
 		wb.write(fileout);
