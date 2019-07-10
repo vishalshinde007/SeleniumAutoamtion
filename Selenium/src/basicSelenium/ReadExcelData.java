@@ -24,6 +24,13 @@ public class ReadExcelData {
       
       obj.setCellData("Sheet4", "LastName", 3, "Shinde1");
       
+      int rowcnt=obj.getrowcount("Sheet4");
+      
+      System.out.println("Row Count :" + rowcnt);
+      
+     // obj.AttachScreenshot("Sheet4", "snap", 2, 2);
+      obj.Create_Excel("Program", 1, 1);
+      
 	}
 
 }
