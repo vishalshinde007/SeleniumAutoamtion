@@ -1,0 +1,41 @@
+
+Abolute Xpath  - Starts from HTML tag
+Relative Xpath - From any tag.
+
+xpath formula
+
+//tagname[@attributeName = 'Attribute Value']
+
+Css formula
+tagname[attributeName = 'Attribute Value']
+
+
+/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/b/font/input[2]
+
+
+//a[@href='mercuryregister.php']
+
+//tagname [text()='']
+//a[text()='REGISTER']
+//a[contains(text(),'REGISTER')]
+//a[contains(@href,'mercuryregis')]
+//a[starts-with(text(),'REGI')]
+//a[@href='mercuryregister.php'][text()='REGISTER']
+//a[@href='mercuryregister.php' and text()='REGISTER']
+//a[@href='mercuryregister.php' or text()='REGISTER']
+
+---how to use ()[]
+(//a[text()='REGISTER'])[1]
+
+
+Web Elements
+-File Upload
+--WebTable
+---TextArea
+---Image
+
+
+
+
+
+
