@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jul 20 13:07:53 IST 2019</td>
+<td>Started on:</td><td>Sat Jul 20 13:09:51 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (308 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (848 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='logicTest.TestNG1.test2()'><b>test2</b><br>Test class: logicTest.TestNG1</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problem: 
-	Assert cannot be resolved
-
-	at logicTest.TestNG1.test2(TestNG1.java:15)
+<td><div><pre>java.lang.AssertionError: expected [nand] but found [Anand]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at logicTest.TestNG1.test2(TestNG1.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -104,11 +108,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace6384802", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace6384802'><pre>java.lang.Error: Unresolved compilation problem: 
-	Assert cannot be resolved
-
-	at logicTest.TestNG1.test2(TestNG1.java:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace22348929", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22348929'><pre>java.lang.AssertionError: expected [nand] but found [Anand]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at logicTest.TestNG1.test2(TestNG1.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
