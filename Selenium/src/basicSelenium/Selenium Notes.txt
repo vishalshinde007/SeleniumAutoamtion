@@ -65,7 +65,11 @@ Xapth    Axes
 //a[text()='Kurtas']/..///preceding-sibling::li/a[text()='Shirts']
 
 
-
+TestNG
+1. Data Driven Framework
+2. Keyword Driven Framework
+3. Modular
+4.Hybrid Framework
 
 
 
